@@ -1,0 +1,74 @@
+/* initial the margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#game {
+    width: 800px;
+    height: 600px;
+    background: url('./images/sky.png');
+    position: relative;
+    overflow: hidden;
+}
+
+#bird {
+    width: 34px;
+    height: 25px;
+    /* initial the bird position */
+    background: url('./images/birds.png') -8px -10px no-repeat;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+#scores {
+    width: 35px;
+    height: 50px;
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    /* background-color: lightblue; */
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    display: block;
+    z-index: 20;
+}
+
+#scoreBoard {
+    display: none;
+    position: absolute;
+    border-radius: 20px;
+    width: 200px;
+    height: 180px;
+    background-color: yellow;
+    z-index: 30;
+    left: 350px;
+    top: 260px;
+}
+
+#btn {
+    display: none;
+    width: 80px;
+    height: 40px;
+    font-size: 28px;
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    background-color: red;
+    z-index: 40;
+}
+
+#finalScore {
+    width: 180px;
+    height: 50px;
+    padding-left: 20px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    position: absolute;
+    top: 30px;
+    display: none;
+}
