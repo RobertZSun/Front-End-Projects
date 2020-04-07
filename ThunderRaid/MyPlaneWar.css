@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#view {
+    width: 320px;
+    height: 568px;
+    background: url('images/bg.png');
+    margin: 0 auto;
+    position: relative;
+}
+
+#battle_aircraft {
+    width: 34px;
+    height: 24px;
+    position: absolute;
+}
+
+#scoreBoard {
+    width: 300px;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin: 0 auto;
+    position: relative;
+    background-color: lightgrey;
+}
+
+#retryButton {
+    width: 320px;
+    height: 30px;
+    font-weight: bold;
+    margin: 0 auto;
+    position: relative;
+}
+
+#gameOver {
+    width: 200px;
+    height: 104px;
+    z-index: 40;
+    display: none;
+    background: white;
+
+    margin: 0 auto;
+    position: relative;
+    top: 60px;
+}
+
+.highlight {
+    font-size: 40px !important;
+    color: red;
+}
