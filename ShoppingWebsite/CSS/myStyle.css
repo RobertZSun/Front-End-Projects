@@ -1,0 +1,556 @@
+html, body, .section {
+    min-height: 600px;
+    min-width: 1000px;
+}
+
+/* go to obby Matcher website button */
+.toMainPage {
+    position: fixed;
+    top: 5%;
+    right: 5%;
+}
+
+.nextSec {
+    position: fixed;
+    bottom: 10%;
+    right: 5%;
+    animation: goNext 3s linear infinite;
+}
+
+@keyframes goNext {
+    25% {
+        bottom: 13%;
+    }
+    50% {
+        bottom: 10%;
+    }
+    75% {
+        bottom: 13%;
+    }
+    100% {
+        bottom: 10%;
+    }
+}
+
+/* style for section 1 */
+.section1 {
+    background: url(../Images/t1fpyqfltdxxaiulhh-990-600.png) no-repeat center bottom;
+}
+
+#airplane_banner {
+    position: absolute;
+    top: 10%;
+    right: 20%;
+}
+
+#sofa {
+    position: absolute;
+    left: 36%;
+    bottom: 40%;
+}
+
+#goods {
+    position: absolute;
+    left: 24%;
+    bottom: 15%;
+}
+
+.upDownAnimation {
+    animation: upDown 5s linear 0s infinite;
+}
+
+.sofaUpDown {
+    animation: sofaUpDown 3s linear 0s infinite;
+}
+
+/* upDown Animation function */
+@keyframes upDown {
+    0% {
+        top: 10%;
+    }
+
+    25% {
+        top: 12%;
+    }
+
+    50% {
+        top: 15%;
+    }
+
+    75% {
+        top: 12%;
+    }
+
+    100% {
+        top: 10%;
+    }
+}
+
+@keyframes sofaUpDown {
+    0% {
+        bottom: 40%;
+    }
+
+    25% {
+        bottom: 42%;
+    }
+
+    50% {
+        bottom: 45%;
+    }
+
+    75% {
+        bottom: 42%;
+    }
+
+    100% {
+        bottom: 40%;
+    }
+
+}
+
+/* style for section 2 */
+.section2 {
+    background: url(../Images/t1zdgpfi8exxca6rfn-2000-600.png) no-repeat center bottom;
+    z-index: 2;
+}
+
+#searchingScreen {
+    width: 990px;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /* margin-left: -495px; */
+    transform: translateX(-50%);
+    /* background: rgba(0, 0, 0, 0.3); */
+}
+
+#searchBox {
+    width: 222px;
+    height: 45px;
+    position: absolute;
+    right: -30px;
+    bottom: 300px;
+    background: url(../Images/search.png) no-repeat;
+    display: none;
+}
+
+#searchContent {
+    position: absolute;
+    right: 50px;
+    top: 5px;
+    opacity: 0;
+}
+
+#wrappedSearchBox {
+    position: absolute;
+    right: 370px;
+    bottom: 300px;
+    display: none;
+}
+
+#goodsForSofas {
+    height: 100px;
+    position: absolute;
+    right: 270px;
+    bottom: 217px;
+    display: none;
+}
+
+#wordsBlack,
+#wordsWhite {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 550px;
+}
+
+#wordsWhite {
+    opacity: 0;
+}
+
+
+/* style for section 3 */
+.section3 {
+    z-index: 1;
+}
+
+#detailInfo {
+    width: 900px;
+    height: 700px;
+    background: url(../Images/main.png) no-repeat center center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 50px
+}
+
+#sizeOptions {
+    width: 300px;
+    height: 250px;
+    position: absolute;
+    bottom: 114px;
+    right: 111px;
+    /* background-color: pink; */
+}
+
+.options {
+    position: absolute;
+    top: 0;
+}
+
+.optionsSelected {
+    opacity: 0;
+}
+
+.shoppingCart-button {
+    position: absolute;
+    bottom: 28px;
+    left: 0;
+    /* margin-top: 10px; */
+}
+
+.shoppingCart-button-Selected {
+    opacity: 0;
+}
+
+/* #brownSofa, */
+.inclinedBrownSofa {
+    position: absolute;
+    left: 213px;
+    bottom: 283px;
+    display: none;
+}
+
+.brownSofaFormer {
+    height: 86px;
+    position: absolute;
+    left: 390px;
+    bottom: 344px;
+    display: none;
+
+}
+
+.whiteCover {
+    width: 107px;
+    height: 90px;
+    position: absolute;
+    bottom: 334px;
+    right: 493px;
+    background-color: #fff;
+    display: none;
+}
+
+
+
+/* style for section 4 */
+.section4 {
+    background: url(../Images/t1iresfnxaxxca6rfn-2000-600.png) no-repeat center bottom;
+    z-index: 0;
+}
+
+.cloud {
+    position: absolute;
+    left: 35%;
+    bottom: 75%;
+}
+
+.cloudMoveLR {
+    animation: cloudMoveLR 15s linear infinite;
+}
+
+@keyframes cloudMoveLR {
+    0% {
+        left: 35%;
+    }
+
+    25% {
+        left: 20%;
+    }
+
+    50% {
+        left: 35%;
+    }
+
+    75% {
+        left: 50%;
+    }
+
+    100% {
+        left: 35%;
+    }
+}
+
+.wordsOnPageFour-a,
+.wordsOnPageFour-b {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 65%;
+}
+
+.wordsOnPageFour-b {
+    opacity: 0;
+}
+
+.shoppingcart {
+    width: 500px;
+    position: absolute;
+    /* background-color: pink; */
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    z-index: 99;
+}
+
+
+.sofaInCart {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 61%;
+    z-index: -1;
+    display: none;
+}
+
+.receipt {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 24%;
+    display: none;
+}
+
+.receipt img:nth-child(2) {
+    width: 315px;
+}
+
+.receipt img:nth-child(1) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 66px;
+    opacity: 0;
+}
+
+/* style for section 5 */
+.section5 {
+    background: url(../Images/t1yisqfa4exxa3gmkg-2000-1500.png);
+    overflow: hidden;
+    perspective: 400;
+    -webkit-perspective: 400;
+    z-index: 1;
+}
+
+.wordsOnPageFive {
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    opacity: 0;
+}
+
+.wordsOnPageFiveAnimation {
+    animation: wordsRollOver 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes wordsRollOver {
+    100% {
+        opacity: 1;
+        transform: translateZ(100px) rotateX(360deg);
+    }
+}
+
+.creditCards {
+    position: absolute;
+    left: 20%;
+    bottom: 25%;
+    z-index: 2;
+}
+
+.creditCardBill {
+    position: absolute;
+    left: 30%;
+    bottom: 32%;
+}
+
+.sofaOnPageFive {
+    position: absolute;
+    left: 32%;
+    bottom: 100%;
+    z-index: 0;
+}
+
+.mouseBeforeClick,
+.mouseAfterClick {
+    position: absolute;
+    right: 20%;
+    bottom: 25%;
+}
+
+.mouseAfterClick {
+    display: none;
+}
+
+
+.hand {
+    position: absolute;
+    right: 25%;
+    bottom: -43%;
+}
+
+
+/* style for section 6 */
+.section6 {
+    background: url(../Images/t1dvj.fn0gxxb0_fua-2500-600.png) no-repeat 25% 100%;
+    overflow: hidden;
+}
+
+.boxOnPageSix {
+    position: absolute;
+    left: 15%;
+    bottom: 70%;
+    z-index: 1;
+}
+
+.cargo {
+    position: absolute;
+    left: 31%;
+    bottom: 0;
+    z-index: 2;
+}
+
+.cloudOnP6 {
+    position: absolute;
+    left: 31%;
+    top: 10%;
+    animation: cloudFlow 30s infinite linear;
+}
+
+@keyframes cloudFlow {
+    25% {
+        left: -31%;
+    }
+
+    60% {
+        left: 70%;
+    }
+
+    75% {
+        left: 131%;
+    }
+
+    100% {
+        left: 31%;
+    }
+}
+
+.sofaOnPageSix {
+    position: absolute;
+    left: 31%;
+    top: -20%;
+}
+
+.addressSign {
+    position: absolute;
+    left: 43%;
+    bottom: 13%;
+    display: none;
+    z-index: 1;
+}
+
+.porter {
+    position: absolute;
+    left: 30%;
+    bottom: 13%;
+    display: none;
+}
+
+
+.receiver {
+    position: absolute;
+    left: 67%;
+    bottom: 13%;
+    display: none;
+    z-index: 2;
+}
+
+.openDoor {
+    position: absolute;
+    left: 68.5%;
+    bottom: 12.5%;
+    display: none;
+    z-index: 1;
+}
+
+.greeting {
+    position: absolute;
+    left: 55%;
+    bottom: 44%;
+    display: none;
+}
+
+.adv {
+    position: absolute;
+    left: 12%;
+    bottom: 58%;
+    display: none;
+}
+
+
+/* style for section 7 */
+.section7 {
+    background: url(../Images/t1wf1tfctaxxa3gmkg-2000-1500.png) no-repeat 25% 100%;
+}
+
+.stars {
+    position: absolute;
+    left: 41.5%;
+    bottom: 47%;
+    /* margin-left:-295px; */
+    height: 19px;
+    width: 0;
+    background: url(../Images/star.png) no-repeat;
+    background-size: 98px;
+    z-index: 1;
+}
+
+.greatComment {
+    position: absolute;
+    left: 42.5%;
+    bottom: 40%;
+    display: none;
+}
+
+.goToShopping {
+    position: absolute;
+    left: 46%;
+    transform: translateX(-50%);
+    top: 50%;
+}
+
+.gifPic {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+
+.playback {
+    position: absolute;
+    right: 20%;
+    top: 58%;
+}
+
+.handPic {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+
+/* style for section 8 */
+.section8 {
+    background: url(../Images/ksgw.png);
+}
