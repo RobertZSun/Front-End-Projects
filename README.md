@@ -5,6 +5,11 @@ Author:  Robert Z.Sun
 
 ***
 
+### 6.[Managing the workflow by using Gulp and plugins](https://github.com/RobertZSun/Front-End-Projects/tree/master/JDmobileWeb)
+
+![image](https://img-blog.csdnimg.cn/20200613073659629.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80MjY1NTcxNw==,size_16,color_FFFFFF,t_70)
+
+
 ### 5.[JD Mobile shopping Website](https://github.com/RobertZSun/Front-End-Projects/tree/master/JDmobileWeb)
 
 https://robertzsun.github.io/Front-End-Projects/JDmobileWeb/
