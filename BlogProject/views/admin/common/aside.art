@@ -1,0 +1,26 @@
+<!-- 侧边栏 -->
+<div class="aside fl">
+    <ul class="menu list-unstyled">
+        <li>
+            <a class="item  {{currentLink == 'user' ? 'active' : ''}}" href="/admin/user">
+                <h5>
+                    <span class="glyphicon glyphicon-user"></span>
+                    User Management
+                </h5>
+            </a>
+        </li>
+        <li>
+            <a class="item {{currentLink == 'article' ? 'active' : ''}}" href="/admin/articles">
+                <h5>
+                    <span class="glyphicon glyphicon-th-list"></span>
+                    Article management
+                </h5>
+            </a>
+        </li>
+    </ul>
+    <div class="cprt">
+        Powered by <a href="https://getbootstrap.com/" target="_blank">Bootstrap</a>
+    </div>
+</div>
+<!-- 侧边栏 -->
+

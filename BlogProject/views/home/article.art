@@ -1,0 +1,65 @@
+{{extend './common/layout.art'}}
+
+{{block 'linkFile'}}
+<link rel="stylesheet" href="/home/css/article.css">
+{{/block}}
+
+{{block 'bodyContent'}}
+<!-- 头部框架开始 -->
+{{include './common/header.art'}}
+<!-- 头部框架结束 -->
+<!-- 文章框架开始 -->
+<div class="article">
+	<div class="w1100">
+		<div class="container">
+			<div class="article-header">
+				<h3 class="article-title">{{articleTitle}}</h3>
+				<div class="article-info">
+					<span class="author">{{articleAuthor}}</span>
+					<span>{{dateFormat(articleDate, 'mm-dd-yyyy')}}</span>
+				</div>
+			</div>
+			<div class="article-content">
+				{{@articleContent}}
+			</div>
+			<div class="article-comment">
+				<h4>Comments</h4>
+				<form class="comment-form" action="/home/comment" method="POST">
+					{{if userInfo}}
+					<textarea name="content" class="comment"></textarea>
+					<div style="display:none">
+						<input type="text" name="articleID" value="{{articleID}}" class="hidden form-control" readonly>
+						<input type="text" name="userID" value="{{@userInfo._id}}" class="hidden form-control" readonly>
+					</div>
+					<div class="items">
+						<input type="submit" value="Submit">
+					</div>
+					{{else}}
+					<textarea class="comment" disabled>Please login to leave a comment</textarea>
+					<div class="items">
+						<input type="submit" value="Submit" disabled>
+					</div>
+					{{/if}}
+				</form>
+
+				<div class="comment-list">
+
+					{{each commentData}}
+					<div class="mb10">
+						<div class="article-info">
+							<span class="author">{{$value.userID.username}}</span>
+							<span>{{dateFormat($value.time, 'mm-dd-yyyy HH:MM:ss')}}</span>
+						</div>
+						<div class="comment-content">
+							{{@$value.content}}
+						</div>
+					</div>
+					{{/each}}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- 文章框架结束 -->
+{{/block}}

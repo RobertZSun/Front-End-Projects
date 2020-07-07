@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>User Login</title>
+    <link rel="stylesheet" href="/admin/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/admin/css/base.css">
+</head>
+
+<body>
+    <div class="login-body">
+        <div class="login-container">
+            <h4 class="title">RobertZSun - Blog Admin Panel</h4>
+            <div class="login">
+                <form method="POST" action="/admin/login" id="loginForm">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input name="email" type="email" class="form-control" placeholder="Please input the email address">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input name="password" type="password" class="form-control" placeholder="Please input the password">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="/home/" class="btn btn-primary pull-right">Cancel / Homepage</a>
+                </form>
+            </div>
+            <div class="tips"></div>
+        </div>
+    </div>
+    <script src="/admin/lib/jquery/dist/jquery.min.js"></script>
+    <script src="/admin/lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/admin/js/common.js"></script>
+    <script type="text/javascript">
+
+        $("#loginForm").on('submit', function () {
+            let result = serializeFormDataToJson($(this));
+            // console.log(result);
+            
+            if (result.email.trim().length == 0) {
+                alert("Please enter the email address")
+                return false;
+            }
+
+            if (result.password.trim().length == 0) {
+                alert("Please enter the password")
+                return false;
+            }
+
+            // return false;
+        });
+    </script>
+</body>
+
+</html>

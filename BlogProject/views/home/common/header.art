@@ -1,0 +1,24 @@
+<!-- 头部框架开始 -->
+<div class="header">
+	<div class="w1100">
+		<!-- 网站logo开始 -->
+		<h1 class="logo fl">
+			<a href="/home/"><img src="/home/images/logo.jpg" alt="rz logo"></a>
+		</h1>
+		<!-- 网站logo结束 -->
+		<!-- 网站导航开始 -->
+		<ul class="navigation fr">
+			<li {{ userInfo && userInfo.role == 'admin' ? 'display' : 'hidden'}}>
+				<a href="/admin/articles">Admin Panel</a>
+			</li>
+			<li>
+				<a href="/home/">Main Page</a>
+			</li>
+			<li>
+				<a href="{{ userInfo ? '/admin/logout' : '/admin/login'}}">{{ userInfo ? 'Logout':'Login'}}</a>
+			</li>
+		</ul>
+		<!-- 网站导航结束 -->
+	</div>
+</div>
+<!-- 头部框架结束 -->

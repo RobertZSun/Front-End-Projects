@@ -1,0 +1,70 @@
+{{extend './common/layout.art'}}
+
+{{block 'linkFile'}}
+<link rel="stylesheet" href="/home/css/index.css">
+{{/block}}
+
+{{block 'bodyContent'}}
+<!-- 头部框架开始 -->
+{{include './common/header.art'}}
+<!-- 头部框架结束 -->
+<!-- 文章列表开始 -->
+<ul class="list w1100">
+
+	{{ each articleList}}
+	<li class="{{ $index%2 == 0 ? 'fl': 'fr'}}">
+		<a href="/home/article?id={{@$value._id}}" class="thumbnail">
+			<img src="{{$value.coverImage}}">
+		</a>
+		<div class="content">
+			<a class="article-title" href="/home/article?id={{@$value._id}}">{{$value.title}}</a>
+			<div class="article-info">
+				<span class="author">{{$value.author.username}}</span>
+				<span>{{dateFormat($value.publishedDate, 'mm-dd-yyyy')}}</span>
+			</div>
+			<div class="brief" style="overflow: hidden;">
+				{{@$value.content.replace(/<[^>]+>/g , '').substr(0,108) + '...'}}
+			</div>
+		</div>
+	</li>
+	{{ /each }}
+
+</ul>
+<!-- 文章列表结束 -->
+
+<!-- 分页开始 -->
+<div class="page w1100">
+
+	{{if currentPage > 1}}
+	<a href="/home?page={{currentPage-1}}"><span>&laquo;</span></a>
+	{{/if}}
+
+	{{each currentPageNumRange}}
+	<a href="/home?page={{$value}}" class="{{currentPage == $value ? 'active' : '' }}">{{$value}}</a>
+	{{ /each}}
+
+	{{if currentPage < totalPageNum}}
+	<a href="/home?page={{currentPage-0+1}}"><span>&raquo;</span></a>
+	{{/if}}
+	
+</div>
+<!-- 分页结束 -->
+{{/block}}
+
+{{block 'scriptFile'}}
+<script type="text/javascript">
+    // $('.delete').on('click', function () {
+
+    //     // get article id
+    //     let title = $(this).attr('data-title');
+    //     let articleId = $(this).attr('data-id');
+    //     console.log(title);
+    //     console.log(articleId);
+
+    //     $('#deleteArticleTitle').val(title);
+    //     // 将要删除的article id存储在隐藏域中
+    //     $('#deleteArticleId').val(articleId);
+
+    // })
+</script>
+{{/block}}
