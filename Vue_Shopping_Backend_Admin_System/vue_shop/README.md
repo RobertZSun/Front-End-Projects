@@ -21,6 +21,7 @@ v-charts | Chart framework based on Echarts | [https://v-charts.js.org/](https:/
 Js-cookie | cookie management tool | [https://github.com/js-cookie/js-cookie](https://github.com/js-cookie/js-cookie)
 nprogress | Progress bar control | [https://github.com/rstacruz/nprogress](https://github.com/rstacruz/nprogress)
 vue-element-admin | Project scaffolding reference | [https://github.com/PanJiaChen/vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+webpack | Project module bundler | [https://webpack.js.org/](https://webpack.js.org/)
 
 
 ## Project setup
