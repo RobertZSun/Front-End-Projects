@@ -13,7 +13,7 @@
     "devDependencies": {
         "coffee-script": "1.5.x",
         "express": "^4.17.1",
-        "shelljs": "0.1.x",
+        "shelljs": "0.8.x",
         "uglify-js": "^2.8.29"
     }
 }
